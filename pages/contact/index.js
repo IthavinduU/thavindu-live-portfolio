@@ -59,10 +59,20 @@ const Contact = () => {
               <textarea name='message' placeholder='message' className='textarea' required></textarea>
               <button type='submit' className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group'>
                 <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'>
-                  Yo ! Let's talk
+                  Send
                 </span>
                 <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]' />
               </button>
+              <p>Hate Forms ? No Worries</p>
+              <a
+                href="mailto:thavindul@gmail.com"
+                className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group'
+              >
+                <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'>
+                  Email Me
+                </span>
+                <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]' />
+              </a>
             </motion.form>
           </div>
         </div>

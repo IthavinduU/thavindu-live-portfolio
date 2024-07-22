@@ -1,49 +1,85 @@
-// links
 import Link from "next/link";
-
-// icons
 import {
   RiLinkedinBoxFill,
   RiGithubFill,
   RiMediumFill,
   RiWhatsappFill,
+  RiMailSendFill
 } from "react-icons/ri";
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-5 text-[25px]">
-      <Link
-        href={"https://www.linkedin.com/in/thavinduliyanage/"}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-accent transition-all duration-300"
-      >
-        <RiLinkedinBoxFill />
-      </Link>
-      <Link
-        href={"https://github.com/IthavinduU"}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-accent transition-all duration-300"
-      >
-        <RiGithubFill />
-      </Link>
-      <Link
-        href={"https://medium.com/@thavindul"}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-accent transition-all duration-300"
-      >
-        <RiMediumFill />
-      </Link>
-      <Link
-        href={"https://wa.me/+94779691729"}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-accent transition-all duration-300"
-      >
-        <RiWhatsappFill />
-      </Link>
+    <div className="flex items-center gap-x-5 text-[25px] relative">
+      {/* Tooltip Wrapper */}
+      <div className="relative group">
+        <Link
+          href={"mailto:thavindul@gmail.com"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-accent transition-all duration-300 flex items-center"
+        >
+          <RiMailSendFill />
+        </Link>
+        <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          Email
+        </span>
+      </div>
+
+      <div className="relative group">
+        <Link
+          href={"https://www.linkedin.com/in/thavinduliyanage/"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-accent transition-all duration-300 flex items-center"
+        >
+          <RiLinkedinBoxFill />
+        </Link>
+        <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          LinkedIn
+        </span>
+      </div>
+
+      <div className="relative group">
+        <Link
+          href={"https://github.com/IthavinduU"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-accent transition-all duration-300 flex items-center"
+        >
+          <RiGithubFill />
+        </Link>
+        <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          GitHub
+        </span>
+      </div>
+
+      <div className="relative group">
+        <Link
+          href={"https://medium.com/@thavindul"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-accent transition-all duration-300 flex items-center"
+        >
+          <RiMediumFill />
+        </Link>
+        <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          Medium
+        </span>
+      </div>
+
+      <div className="relative group">
+        <Link
+          href={"https://wa.me/+94779691729"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-accent transition-all duration-300 flex items-center"
+        >
+          <RiWhatsappFill />
+        </Link>
+        <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          WhatsApp
+        </span>
+      </div>
     </div>
   );
 };
