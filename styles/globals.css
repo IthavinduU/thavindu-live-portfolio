@@ -6,8 +6,9 @@
   transform: translateZ(0px);
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
   background-color: #f13024;
 }
 
@@ -60,7 +61,7 @@
 
 /*Gradient css for the slogan animation*/
 .gradient-text {
-  background: linear-gradient(90deg, #ff007f, #ff6f00, #00bcd4);
+  background: linear-gradient(90deg, #050b64, hsl(199, 100%, 50%), #ffffff);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -82,4 +83,25 @@
   100% {
     background-position: 0% 0%;
   }
+}
+
+.typewriter-text {
+  font-size: 40px; 
+  color:#f13067;
+  
+}
+
+footer {
+  font-size: 0.5rem; /* Smaller font size (14px) */
+  text-align: left;
+  padding: 10rem; /* Adjust padding as needed */
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
