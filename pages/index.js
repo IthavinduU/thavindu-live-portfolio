@@ -56,13 +56,10 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            I'm Thavindu Liyanage, A final year computer science undergraduate
-            at University of Westminster. A tech savvy nerd with passion for web
-            development and backend engineering.
-          </motion.p>
+            Relentlessly curious tech enthusiast, igniting innovation in the ever-evolving digital landscape, one line of code at a time.          </motion.p>
           {/* Button */}
           <div className="flex justify-center xl:hidden relative"></div>
-          <ResumeButton /> {/* Add the ResumeButton component */}
+          <ResumeButton />
         </div>
       </div>
       {/* Image Section */}

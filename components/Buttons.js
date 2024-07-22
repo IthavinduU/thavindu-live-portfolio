@@ -24,12 +24,9 @@ const ResumeButton = () => {
         </motion.button>
       </Link>
 
-      {/*---------------------------------------------------------------------*/}
       {/* Contact Me Button */}
       <Link
-        href="mailto:thavindul@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/contact"
       >
         <motion.button
           className="bg-accent text-white px-6 py-3 rounded-lg shadow-lg font-semibold cursor-pointer"

@@ -92,10 +92,10 @@
 }
 
 footer {
-  font-size: 0.5rem; /* Smaller font size (14px) */
+  font-size: 10px; 
   text-align: left;
-  padding: 10rem; /* Adjust padding as needed */
-  background-color: transparent; /* Ensure background is transparent */
+  padding: 10rem; 
+  background-color: transparent; 
 }
 
 footer a {
@@ -105,4 +105,18 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Card styles */
+.card-view {
+  width: 400px; 
+  height: 165px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content {
+  flex-grow: 1;
+  overflow: hidden; 
 }

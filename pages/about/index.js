@@ -1,33 +1,36 @@
 // pages/about/index.js
 import CardView from '../../components/CardView';
 import React, { useState } from 'react';
-import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma } from 'react-icons/fa';
-import { SiNextdotjs, SiFramer, SiAdobexd, SiAdobephotoshop } from 'react-icons/si';
+import { FaHtml5, FaCss3, FaJs, FaFigma, FaJava, FaPython, FaRust } from 'react-icons/fa';
+import { SiAdobexd, SiAdobephotoshop, SiPhp, SiKotlin, SiCsharp, SiDart, SiPreact, SiNextdotjs, SiNodedotjs, SiVuedotjs, SiFalcon } from 'react-icons/si';
 import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 import CountUp from 'react-countup';
-import Footer from '../../components/Footer';  // Import Footer
 
 export const aboutData = [
   {
-    title: 'skills',
+    title: 'Tech Stack',
     info: [
       {
         title: 'Languages',
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
+          <FaJava />,
           <FaJs />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaPython />,
+          <SiPhp />,
+          <SiKotlin />,
+          <SiCsharp />,
+          <SiDart />,
+          <FaRust />
         ],
       },
       {
         title: 'Frameworks',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<SiPreact/>, <SiNextdotjs/>, <SiNodedotjs/>, <SiVuedotjs/>, <SiFalcon/>],
       },
       {
         title: 'Tools',
@@ -40,7 +43,7 @@ export const aboutData = [
     info: [
       {
         degree: 'BSc. Computer Science (Reading)',
-        school: 'University Of Westminster = United Kingdom',
+        school: 'University Of Westminster - United Kingdom',
         year: '2022 Jan - Present',
         info: 'During my degree at Westminster University, I studied Mathematics for Computing, JavaScript, HTML, CSS, Java, OOP, UML, Flutter, PHP (Laravel), and Tailwind CSS.',
         link: 'https://www.westminster.ac.uk'
@@ -56,8 +59,8 @@ export const aboutData = [
         degree: 'G.C.E. Advanced Levels - Physical Science Stream',
         school: 'Kingswood College Kandy',
         year: '2007 Jan - 2020 Aug',
-        info: 'Completed GCE A/Ls in physical science stream with 3 passes.',
-        link: 'https://www.kingswoodcollege.edu.lk'
+        info: 'Completed GCE Advanced Levels in physical science stream with 3 passes.',
+        link: 'http://www.kingswood.sch.lk/index.html'
       },
     ],
   },
@@ -67,24 +70,23 @@ export const aboutData = [
       {
         title: 'Software Engineer - Intern',
         content: 'Vetstoria - 2023 July to 2024 July',
-        info: 'Worked on developing and maintaining software solutions.',
+        info: 'Worked on a real-time appointment booking system running on a PHP(Phalcon) back-end and Vue front-end.',
         link: 'https://www.vetstoria.com'
       },
       {
         title: 'Technical Writer',
         content: 'Medium - 2024 Feb to Present',
-        info: 'Contributed to various web development projects.',
+        info: 'Contributing to the community with knowledge I pursuit throughout my journey.',
         link: 'https://medium.com/@thavindul'
       },
       {
         title: 'IT Support Admin',
         content: 'IseeQ Solutions - 2020 Nov to 2021 March',
-        info: 'Gained experience in various facets of software development.',
+        info: 'Assisted in administration work and IT support.',
         link: 'https://www.iseeq.lk/'
       },
     ],
   },
-  // Other sections...
 ];
 
 const About = () => {
@@ -123,9 +125,7 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-            I'm Thavindu Liyanage, A final year computer science undergraduate
-            who is a tech savvy geek with passion for web
-            development and backend engineering.
+            I'm Thavindu Liyanage, A final year computer science undergraduate with passion for web development and backend engineering.
           </motion.p>
           {/* counters */}
           <motion.div
