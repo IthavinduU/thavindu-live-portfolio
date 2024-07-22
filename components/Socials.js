@@ -1,36 +1,48 @@
 // links
-import Link from 'next/link';
+import Link from "next/link";
 
 // icons
 import {
-  RiYoutubeLine,
-  RiInstagramLine,
-  RiFacebookLine,
-  RiDribbbleLine,
-  RiBehanceLine,
-  RiPinterestLine,
-} from 'react-icons/ri';
+  RiLinkedinBoxFill,
+  RiGithubFill,
+  RiMediumFill,
+  RiWhatsappFill,
+} from "react-icons/ri";
 
 const Socials = () => {
   return (
-    <div className='flex items-center gap-x-5 text-lg'>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiYoutubeLine />
+    <div className="flex items-center gap-x-5 text-[25px]">
+      <Link
+        href={"https://www.linkedin.com/in/thavinduliyanage/"}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-accent transition-all duration-300"
+      >
+        <RiLinkedinBoxFill />
       </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiFacebookLine />
+      <Link
+        href={"https://github.com/IthavinduU"}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-accent transition-all duration-300"
+      >
+        <RiGithubFill />
       </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiInstagramLine />
+      <Link
+        href={"https://medium.com/@thavindul"}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-accent transition-all duration-300"
+      >
+        <RiMediumFill />
       </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiDribbbleLine />
-      </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiBehanceLine />
-      </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiPinterestLine />
+      <Link
+        href={"https://wa.me/+94779691729"}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-accent transition-all duration-300"
+      >
+        <RiWhatsappFill />
       </Link>
     </div>
   );
