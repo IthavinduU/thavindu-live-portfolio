@@ -17,9 +17,11 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-tsparticles": "^2.9.3",
+    "styled-components": "^6.1.12",
     "swiper": "^9.4.0",
     "tailwind-scrollbar": "^3.0.4",
-    "tsparticles": "^2.9.3"
+    "tsparticles": "^2.9.3",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

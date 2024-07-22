@@ -95,6 +95,7 @@ footer {
   font-size: 0.5rem; /* Smaller font size (14px) */
   text-align: left;
   padding: 10rem; /* Adjust padding as needed */
+  background-color: transparent; /* Ensure background is transparent */
 }
 
 footer a {
