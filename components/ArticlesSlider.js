@@ -53,6 +53,7 @@ const Articleslider = () => {
           disableOnInteraction: false
         }}
         speed={3000}
+        loop={true} // Add this line to enable looping
         modules={[Navigation, Pagination, Autoplay]}
         className="h-[400px]"
       >
