@@ -1,4 +1,3 @@
-// components
 import Articleslider from '../../components/ArticlesSlider';
 
 // framer motion

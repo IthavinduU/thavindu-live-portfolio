@@ -6,8 +6,25 @@ import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 import { FaQuoteLeft } from "react-icons/fa";
 import Link from "next/link";
+import parse from "html-react-parser";
+import dompurify from "dompurify";
 
-const articleSlider = () => {
+// Helper function to get the first 3 sentences from a string
+const getAbstract = (text) => {
+  const sentences = text.split(".").slice(0, 5).join(".") + ".";
+  return sentences;
+};
+
+// Helper function to clean HTML content, stripping out images
+const cleanHTML = (html) => {
+  const sanitizedHTML = dompurify.sanitize(html, {
+    ALLOWED_TAGS: ["p", "a", "strong", "em", "ul", "li"],
+    ALLOWED_ATTR: ["href"]
+  });
+  return sanitizedHTML;
+};
+
+const Articleslider = () => {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
@@ -39,18 +56,11 @@ const articleSlider = () => {
         {articles.map((article, index) => (
           <SwiperSlide key={index}>
             <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
-              {/* avatar, name, position */}
+              {/* image and title */}
               <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
                 <div className="flex flex-col justify-center text-center">
-                  {/* avatar */}
-                  <div className="mb-2 mx-auto">
-                    <img
-                      src={article.thumbnail}
-                      width={100}
-                      height={100}
-                      alt={article.title}
-                    />
-                  </div>
+                  {/* image */}
+                  <div className="mb-2 mx-auto"></div>
                   {/* title */}
                   <div className="text-lg">{article.title}</div>
                   {/* pubDate */}
@@ -59,21 +69,21 @@ const articleSlider = () => {
                   </div>
                 </div>
               </div>
-              {/* message */}
+              {/* description and link */}
               <div className="flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
                 {/* quote icon */}
                 <div className="mb-4">
                   <FaQuoteLeft className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0" />
                 </div>
                 {/* description */}
-                <div className="xl:text-lg text-center md:text-left">
-                  {article.description}
+                <div className="xl:text-lg text-center md:text-left mb-4">
+                  {parse(cleanHTML(getAbstract(article.description)))}
                 </div>
                 {/* link to full article */}
                 <Link href={article.link} passHref>
-                  <div className="text-blue-500 hover:underline mt-4 cursor-pointer">
+                  <span className="text-blue-500 hover:underline mt-4 cursor-pointer">
                     Read more
-                  </div>
+                  </span>
                 </Link>
               </div>
             </div>
@@ -84,4 +94,4 @@ const articleSlider = () => {
   );
 };
 
-export default articleSlider;
+export default Articleslider;
