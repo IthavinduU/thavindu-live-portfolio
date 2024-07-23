@@ -110,6 +110,10 @@
   bottom: 0;
 }
 
+.buy-template{
+  font-size: 20px;
+}
+
 /* Card styles */
 .card-view {
   width: 400px; 

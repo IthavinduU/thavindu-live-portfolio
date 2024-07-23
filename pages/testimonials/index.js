@@ -1,11 +1,11 @@
 // components
-import TestimonialSlider from '../../components/TestimonialSlider';
+import Articleslider from '../../components/ArticlesSlider';
 
 // framer motion
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 
-const Testimonials = () => {
+const Articles = () => {
   return (
     <div className='h-full bg-primary/30 py-32 text-center'>
       <div className='container mx-auto h-full flex flex-col justify-center'>
@@ -17,7 +17,7 @@ const Testimonials = () => {
           exit='hidden'
           className='h2 mb-8 xl:mb-0'
         >
-          What clients <span className='text-accent'>say.</span>
+          Knowledge is <span className='text-accent'>Power.</span>
         </motion.h2>
         {/* slider */}
         <motion.div
@@ -26,11 +26,11 @@ const Testimonials = () => {
           animate='show'
           exit='hidden'
         >
-          <TestimonialSlider />
+          <Articleslider />
         </motion.div>
       </div>
     </div>
   );
 };
 
-export default Testimonials;
+export default Articles;
