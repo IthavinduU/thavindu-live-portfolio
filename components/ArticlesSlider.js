@@ -7,7 +7,7 @@ import { Navigation, Pagination } from "swiper";
 import { FaQuoteLeft } from "react-icons/fa";
 import Link from "next/link";
 
-const BlogSlider = () => {
+const articleSlider = () => {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
@@ -84,4 +84,4 @@ const BlogSlider = () => {
   );
 };
 
-export default BlogSlider;
+export default articleSlider;
