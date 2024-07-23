@@ -3,19 +3,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper";
 import { FaQuoteLeft } from "react-icons/fa";
 import Link from "next/link";
 import parse from "html-react-parser";
 import dompurify from "dompurify";
 
-// Helper function to get the first 3 sentences from a string
 const getAbstract = (text) => {
   const sentences = text.split(".").slice(0, 5).join(".") + ".";
   return sentences;
 };
 
-// Helper function to clean HTML content, stripping out images
 const cleanHTML = (html) => {
   const sanitizedHTML = dompurify.sanitize(html, {
     ALLOWED_TAGS: ["p", "a", "strong", "em", "ul", "li"],
@@ -44,21 +42,26 @@ const Articleslider = () => {
   }, []);
 
   return (
-    <div className="h-full bg-gray-900 py-8">
+    <div className=" px-16 py-1 px-4">
       <Swiper
         navigation={true}
         pagination={{
           clickable: true
         }}
-        modules={[Navigation, Pagination]}
+        autoplay={{
+          delay: 7000,
+          disableOnInteraction: false
+        }}
+        speed={3000}
+        modules={[Navigation, Pagination, Autoplay]}
         className="h-[400px]"
       >
         {articles.map((article, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
+            <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16 py-4">
               {/* image and title */}
-              <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
-                <div className="flex flex-col justify-center text-center">
+              <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0  ">
+                <div className="flex flex-col justify-center text-center ">
                   {/* image */}
                   <div className="mb-2 mx-auto"></div>
                   {/* title */}
