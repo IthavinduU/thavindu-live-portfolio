@@ -1,5 +1,4 @@
 // pages/buyTemplate.js
-import Link from "next/link";
 
 const BuyTemplate = () => {
   return (

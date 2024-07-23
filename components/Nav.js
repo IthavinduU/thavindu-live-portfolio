@@ -12,18 +12,9 @@ import {
 export const navData = [
   { name: 'home', path: '/', icon: <HiHome /> },
   { name: 'about', path: '/about', icon: <HiUser /> },
-  { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
   { name: 'work', path: '/work', icon: <HiViewColumns /> },
-  {
-    name: 'testimonials',
-    path: '/testimonials',
-    icon: <HiChatBubbleBottomCenterText />,
-  },
-  {
-    name: 'contact',
-    path: '/contact',
-    icon: <HiEnvelope />,
-  },
+  { name: 'blogs', path: '/services', icon: <HiRectangleGroup /> },
+  { name: 'contact',path: '/contact',icon: <HiEnvelope />,},
 ];
 
 // next link
@@ -45,9 +36,8 @@ const Nav = () => {
         {navData.map((link, index) => {
           return (
             <Link
-              className={`${
-                link.path === pathname && 'text-accent'
-              } relative flex items-center group hover:text-accent transition-all duration-300`}
+              className={`${link.path === pathname && 'text-accent'
+                } relative flex items-center group hover:text-accent transition-all duration-300`}
               href={link.path}
               key={index}
             >

@@ -23,22 +23,19 @@ import { FreeMode, Pagination } from 'swiper';
 export const serviceData = [
   {
     icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Web Development',
   },
   {
     icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'UI/UX Design',
   },
   {
     icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Mobile Developement',
   },
   {
     icon: <RxReader />,
-    title: 'Copywriting',
+    title: 'Article Writing',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {

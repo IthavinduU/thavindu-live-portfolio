@@ -7,6 +7,7 @@ import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
+import Footer from "../../components/Footer";
 import CountUp from 'react-countup';
 
 export const aboutData = [
@@ -213,6 +214,8 @@ const About = () => {
             </div>
           </motion.div>
         </div>
+        {/* Footer */}
+        <Footer />
       </div>
     </>
   );
