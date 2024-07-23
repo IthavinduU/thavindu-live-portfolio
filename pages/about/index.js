@@ -2,7 +2,7 @@ import Head from 'next/head';
 import CardView from '../../components/CardView';
 import React, { useState } from 'react';
 import { FaHtml5, FaCss3, FaJs, FaFigma, FaJava, FaPython, FaRust } from 'react-icons/fa';
-import { SiAdobexd, SiAdobephotoshop, SiPhp, SiKotlin, SiCsharp, SiDart, SiPreact, SiNextdotjs, SiNodedotjs, SiVuedotjs, SiFalcon } from 'react-icons/si';
+import { SiAdobexd, SiAdobephotoshop, SiPhp, SiMysql, SiMongodb, SiKotlin, SiCsharp, SiSpringboot, SiDart, SiPreact, SiNextdotjs, SiNodedotjs, SiBitbucket, SiVuedotjs, SiFalcon, SiAmazonaws, SiGit, SiGithub, SiDocker, SiKubernetes, SiGnubash } from 'react-icons/si';
 import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 import { motion } from 'framer-motion';
@@ -25,16 +25,17 @@ export const aboutData = [
           <SiKotlin />,
           <SiCsharp />,
           <SiDart />,
+          <SiGnubash />,
           <FaRust />
         ],
       },
       {
         title: 'Frameworks',
-        icons: [<SiPreact />, <SiNextdotjs />, <SiNodedotjs />, <SiVuedotjs />, <SiFalcon />],
+        icons: [<SiPreact />, <SiNextdotjs />, <SiNodedotjs />, <SiSpringboot />, <SiVuedotjs />, <SiFalcon />],
       },
       {
         title: 'Tools',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<SiAmazonaws />, <FaFigma />, <SiAdobexd />, <SiBitbucket />, <SiMysql />, <SiMongodb />, <SiAdobephotoshop />, <SiGit />, <SiGithub />, <SiDocker />, <SiKubernetes />],
       },
     ],
   },
