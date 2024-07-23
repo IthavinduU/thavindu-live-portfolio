@@ -1,9 +1,12 @@
 // components/Footer.js
+import Link from 'next/link';
+
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white py-4 text-left text-sm">
-      <p>&copy; {new Date().getFullYear()} Thavindu Liyanage. All rights reserved.</p>
-    </footer>
+    <Link href="/BuyTemplate">
+      <p className="footer">© 2024 Thavindu Liyanage. All rights reserved.</p>
+      
+    </Link>
   );
 };
 

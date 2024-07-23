@@ -4,7 +4,8 @@ import {
   RiGithubFill,
   RiMediumFill,
   RiWhatsappFill,
-  RiMailSendFill
+  RiMailSendFill,
+  RiCupFill
 } from "react-icons/ri";
 
 const Socials = () => {
@@ -78,6 +79,17 @@ const Socials = () => {
         </Link>
         <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           WhatsApp
+        </span>
+      </div>
+      <div className="relative group">
+        <Link
+          href={"/BuyTemplate"}
+          className="hover:text-accent transition-all duration-300 flex items-center"
+        >
+          <RiCupFill />
+        </Link>
+        <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          buymeacoffee
         </span>
       </div>
     </div>
