@@ -79,7 +79,7 @@ export const aboutData = [
         title: 'Technical Writer',
         content: 'Medium - 2024 Feb to Present',
         info: 'Contributing to the community with knowledge I pursuit throughout my journey.',
-        link: 'https://medium.com/@thavindul'
+        link: 'https://medium.com/@thavinduwrites'
       },
       {
         title: 'IT Support Admin',

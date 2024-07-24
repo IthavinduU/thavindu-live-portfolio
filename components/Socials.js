@@ -56,7 +56,7 @@ const Socials = () => {
 
       <div className="relative group">
         <Link
-          href={"https://medium.com/@thavindul"}
+          href={"https://medium.com/@thavinduwrites"}
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-accent transition-all duration-300 flex items-center"

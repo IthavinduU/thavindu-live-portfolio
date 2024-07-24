@@ -29,7 +29,7 @@ const Articleslider = () => {
     const fetchArticles = async () => {
       try {
         const response = await fetch(
-          "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@thavindul"
+          "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@thavinduwrites"
         );
         const data = await response.json();
         setArticles(data.items);
