@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import Articleslider from '../../components/ArticlesSlider';
+import Bulb from '../../components/Bulb';
+import Footer from "../../components/Footer";
+
 
 // framer motion
 import { motion } from 'framer-motion';
@@ -12,7 +15,7 @@ const Articles = () => {
         <title>Articles By Thavindu</title>
         <meta name="description" content="Read the latest articles and expand your knowledge on various topics. Knowledge is power!" />
       </Head>
-      <div className='h-full bg-primary/30 py-32 text-center'>
+      <div className='h-full bg-primary/30 py-32 text-center flex items-center'>
         <div className='container mx-auto h-full flex flex-col justify-center'>
           {/* title */}
           <motion.h2
@@ -35,7 +38,10 @@ const Articles = () => {
             <Articleslider />
           </motion.div>
         </div>
+        <Bulb />
       </div>
+      {/* Footer */}
+      <Footer />
     </>
   );
 };
