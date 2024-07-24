@@ -13,6 +13,7 @@ import {
   RxPencil2,
   RxReader,
   RxRocket,
+  RxMobile,
   RxArrowTopRight,
 } from 'react-icons/rx';
 
@@ -22,7 +23,7 @@ import { FreeMode, Pagination } from 'swiper';
 // service data
 export const serviceData = [
   {
-    icon: <RxCrop />,
+    icon: <RxDesktop />,
     title: 'Web Development',
   },
   {
@@ -30,18 +31,16 @@ export const serviceData = [
     title: 'UI/UX Design',
   },
   {
-    icon: <RxDesktop />,
-    title: 'Mobile Developement',
+    icon: <RxMobile />,
+    title: 'Mobile Dev',
   },
   {
     icon: <RxReader />,
     title: 'Article Writing',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
     icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'IT Consultation',
   },
 ];
 
