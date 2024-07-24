@@ -53,7 +53,7 @@ const Articleslider = () => {
           disableOnInteraction: false
         }}
         speed={3000}
-        loop={true} // Add this line to enable looping
+        loop={true} 
         modules={[Navigation, Pagination, Autoplay]}
         className="h-[400px]"
       >
@@ -86,7 +86,7 @@ const Articleslider = () => {
                 {/* link to full article */}
                 <Link href={article.link} passHref>
                   <span className="text-blue-500 hover:underline mt-4 cursor-pointer">
-                    Read more
+                    Read More
                   </span>
                 </Link>
               </div>
