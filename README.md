@@ -1,39 +1,67 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Thavindu Live Portfolio
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-First, run the development server:
+This is my Personal Portfolio made using Next.js and React with Tailwind CSS.
 
-```bash
+![Portfolio Preview](https://your-image-url.com)
+
+## 🚀 Features
+
+- Dynamic and interactive UI
+- Smooth animations and transitions
+- Responsive design
+- Integration with various APIs
+- Easy-to-use contact form
+
+## 📂 Project Structure
+
+```plaintext
+├── components
+│   ├── Header.js
+│   ├── Footer.js
+│   ├── ...
+├── pages
+│   ├── index.js
+│   ├── about.js
+│   ├── ...
+├── public
+│   ├── images
+│   ├── ...
+├── styles
+│   ├── globals.css
+│   ├── ...
+└── ...
+
+
+🛠️ Installation
+Clone the repository:
+git clone https://github.com/yourusername/thavindu-live-portfolio.git
+
+Navigate to the project directory:
+cd thavindu-live-portfolio
+
+Install the dependencies:
+npm install
+
+Start the development server:
 npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📬 Contact
+Feel free to reach out if you have any questions or suggestions.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Email: thavindul@gmail.com
+LinkedIn: Your LinkedIn Profile
+Twitter: @yourhandle
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+📸 Screenshots
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+✨ Contributions
+Contributions are welcome! Please open an issue or submit a pull request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-=======
-# thavindu-live-portfolio
-My Personal Portfolio
->>>>>>> 1c02d7654f00ee5248c661853cd5fb6305a7e9ac
+📝 License
+This project is licensed under the MIT License.

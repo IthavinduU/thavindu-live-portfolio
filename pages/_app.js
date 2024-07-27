@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Thavindu Liyanage</title>
-        <meta name="description" content="My personal portfolio website" />
+        <meta name="description" content="Thavindu Liyanage personal portfolio website" />
         <meta property="og:title" content="Thavindu Liyanage" />
         <link rel="icon" type="image/png" href="/avatar.png" />
       </Head>
