@@ -6,7 +6,7 @@ import { sendEmail } from "../../lib/email";
 import Head from "next/head";
 import Modal from "react-modal";
 
-Modal.setAppElement("#__next"); // To avoid screen reader issues
+Modal.setAppElement("#__next");
 
 const Contact = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);

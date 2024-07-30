@@ -1,5 +1,3 @@
-// data/workSliderData.js
-
 export const workSlider = {
   slides: [
     {

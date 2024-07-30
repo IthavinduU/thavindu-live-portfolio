@@ -86,16 +86,15 @@
 }
 
 .typewriter-text {
-  font-size: 40px; 
-  color:#f13067;
-  
+  font-size: 40px;
+  color: #f13067;
 }
 
 .footer {
   text-align: left;
   padding-left: 10rem;
   padding-bottom: 25px;
-  color: #7d7d7e; 
+  color: #7d7d7e;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -104,20 +103,20 @@
   text-align: left;
   padding-left: 16rem;
   padding-bottom: 10px;
-  color: #7d7d7e; 
+  color: #7d7d7e;
   position: absolute;
   width: 100%;
   bottom: 0;
 }
 
-.buy-template{
+.buy-template {
   font-size: 20px;
 }
 
 /* Card styles */
 .card-view {
-  width: 400px; 
-  height: 165px; 
+  width: 400px;
+  height: 165px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -125,5 +124,5 @@
 
 .card-content {
   flex-grow: 1;
-  overflow: hidden; 
+  overflow: hidden;
 }

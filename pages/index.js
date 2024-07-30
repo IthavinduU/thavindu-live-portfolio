@@ -1,4 +1,3 @@
-// pages/index.js
 import ParticlesContainer from "../components/ParticlesContainer";
 import Avatar from "../components/Avatar";
 import Footer from "../components/Footer";
@@ -9,7 +8,7 @@ import ResumeButton from "../components/Buttons";
 
 export const Bio = {
   name: "ThavinduU",
-  roles: ["Full Stack Developer", "Cloud Enthusiast", "Savvy Tech Nerd"],
+  roles: ["Full Stack Developer", "Cloud Enthusiast", "Savvy Tech Nerd"]
 };
 
 const Home = () => {
@@ -42,7 +41,7 @@ const Home = () => {
                   options={{
                     strings: Bio.roles,
                     autoStart: true,
-                    loop: true,
+                    loop: true
                   }}
                 />
               </div>
@@ -56,7 +55,9 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Relentlessly curious tech enthusiast, igniting innovation in the ever-evolving digital landscape, one line of code at a time.          </motion.p>
+            Relentlessly curious tech enthusiast, igniting innovation in the
+            ever-evolving digital landscape, one line of code at a time.{" "}
+          </motion.p>
           {/* Button */}
           <div className="flex justify-center xl:hidden relative"></div>
           <ResumeButton />
