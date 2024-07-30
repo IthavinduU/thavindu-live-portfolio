@@ -47,44 +47,44 @@ export const aboutData = [
       {
         title: "Languages",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJava />,
-          <FaJs />,
-          <FaPython />,
-          <SiPhp />,
-          <SiKotlin />,
-          <SiCsharp />,
-          <SiDart />,
-          <SiGnubash />,
-          <FaRust />
+          <FaHtml5 key="html5" />,
+          <FaCss3 key="css3" />,
+          <FaJava key="java" />,
+          <FaJs key="js" />,
+          <FaPython key="python" />,
+          <SiPhp key="php" />,
+          <SiKotlin key="kotlin" />,
+          <SiCsharp key="csharp" />,
+          <SiDart key="dart" />,
+          <SiGnubash key="gnubash" />,
+          <FaRust key="rust" />
         ]
       },
       {
         title: "Frameworks",
         icons: [
-          <SiPreact />,
-          <SiNextdotjs />,
-          <SiNodedotjs />,
-          <SiSpringboot />,
-          <SiVuedotjs />,
-          <SiFalcon />
+          <SiPreact key="preact" />,
+          <SiNextdotjs key="nextjs" />,
+          <SiNodedotjs key="nodejs" />,
+          <SiSpringboot key="springboot" />,
+          <SiVuedotjs key="vuejs" />,
+          <SiFalcon key="falcon" />
         ]
       },
       {
         title: "Tools",
         icons: [
-          <SiAmazonaws />,
-          <FaFigma />,
-          <SiAdobexd />,
-          <SiBitbucket />,
-          <SiMysql />,
-          <SiMongodb />,
-          <SiAdobephotoshop />,
-          <SiGit />,
-          <SiGithub />,
-          <SiDocker />,
-          <SiKubernetes />
+          <SiAmazonaws key="aws" />,
+          <FaFigma key="figma" />,
+          <SiAdobexd key="adobexd" />,
+          <SiBitbucket key="bitbucket" />,
+          <SiMysql key="mysql" />,
+          <SiMongodb key="mongodb" />,
+          <SiAdobephotoshop key="photoshop" />,
+          <SiGit key="git" />,
+          <SiGithub key="github" />,
+          <SiDocker key="docker" />,
+          <SiKubernetes key="kubernetes" />
         ]
       }
     ]
