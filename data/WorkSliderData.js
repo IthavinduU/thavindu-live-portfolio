@@ -8,45 +8,21 @@ export const workSlider = {
           link: "https://github.com/IthavinduU/Dice-Maniacs"
         },
         {
-          title: "Project Title 2",
+          title: "Fule Station Management System",
           path: "/thumb2.jpg",
-          link: "https://example.com/project2"
+          link: "https://github.com/IthavinduU/Fuel-Station-Management-System"
         },
         {
-          title: "Project Title 3",
+          title: "Prettify - A Deep CNN Model",
           path: "/thumb3.jpg",
-          link: "https://example.com/project3"
+          link: "https://github.com/kaveenSP/prettify"
         },
         {
-          title: "Project Title 4",
+          title: "Movie Finder - Custom Python Library",
           path: "/thumb4.jpg",
-          link: "https://example.com/project4"
+          link: "https://github.com/IthavinduU/movie_finder"
         }
       ]
     },
-    {
-      images: [
-        {
-          title: "Project Title 5",
-          path: "/thumb4.jpg",
-          link: "https://example.com/project5"
-        },
-        {
-          title: "Project Title 6",
-          path: "/thumb1.jpg",
-          link: "https://example.com/project6"
-        },
-        {
-          title: "Project Title 7",
-          path: "/thumb2.jpg",
-          link: "https://example.com/project7"
-        },
-        {
-          title: "Project Title 8",
-          path: "/thumb3.jpg",
-          link: "https://example.com/project8"
-        }
-      ]
-    }
   ]
 };
