@@ -184,7 +184,7 @@ const About = () => {
               exit="hidden"
               className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
             >
-              Im Thavindu Liyanage a final year computer science
+              I&apos;m Thavindu Liyanage, a final year computer science
               undergraduate with passion for web development and backend
               engineering.
             </motion.p>
@@ -236,20 +236,18 @@ const About = () => {
             className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
           >
             <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
-              {aboutData.map((item, itemIndex) => {
-                return (
-                  <div
-                    key={itemIndex}
-                    className={`${
-                      index === itemIndex &&
-                      "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-                    }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                    onClick={() => setIndex(itemIndex)}
-                  >
-                    {item.title}
-                  </div>
-                );
-              })}
+              {aboutData.map((item, itemIndex) => (
+                <div
+                  key={itemIndex}
+                  className={`${
+                    index === itemIndex &&
+                    "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
+                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                  onClick={() => setIndex(itemIndex)}
+                >
+                  {item.title}
+                </div>
+              ))}
             </div>
             {/* Interactive CardView for each section */}
             <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
