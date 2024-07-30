@@ -184,7 +184,7 @@ const About = () => {
               exit="hidden"
               className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
             >
-              &apos;Im Thavindu Liyanage, a final year computer science
+              Im Thavindu Liyanage a final year computer science
               undergraduate with passion for web development and backend
               engineering.
             </motion.p>
