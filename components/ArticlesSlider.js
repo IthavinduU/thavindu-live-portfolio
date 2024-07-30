@@ -53,7 +53,7 @@ const Articleslider = () => {
           disableOnInteraction: false
         }}
         speed={3000}
-        loop={true} 
+        loop={true}
         modules={[Navigation, Pagination, Autoplay]}
         className="h-[400px]"
       >
