@@ -7,15 +7,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <Component {...pageProps} />
-      <Analytics />
-    </>
-  );
-}
-
-function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   return (
@@ -37,6 +28,7 @@ function MyApp({ Component, pageProps }) {
           </motion.div>
         </AnimatePresence>
       </Layout>
+      <Analytics />
     </>
   );
 }
