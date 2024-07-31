@@ -6,9 +6,8 @@
   transform: translateZ(0px);
 }
 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   background-color: #f13024;
 }
 
@@ -22,11 +21,11 @@
 @layer base {
   body {
     @apply leading-relaxed;
-    overflow-x: hidden; /* Allow vertical scrolling */
+    overflow-x: hidden;
   }
 
   .page {
-    @apply w-full h-screen overflow-auto; /* Allow scrolling */
+    @apply w-full h-screen overflow-auto;
   }
 
   .h1 {
@@ -91,25 +90,29 @@
   color: #f13067;
 }
 
-.footer {
-  text-align: left;
-  padding-left: 10rem;
-  padding-bottom: 25px;
-  color: #7d7d7e;
-  position: absolute;
+.footer-container {
   width: 100%;
+  position: absolute;
   bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
 }
 
-.footer-buytemp {
-  text-align: left;
-  padding-left: 16rem;
-  padding-bottom: 10px;
+.footer {
+  font-size: 14px;
   color: #7d7d7e;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+  margin: 0;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 
 .buy-template {
   font-size: 20px;
@@ -117,7 +120,8 @@
 
 /* Card styles */
 .card-view {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 165px;
   display: flex;
   flex-direction: column;
@@ -127,4 +131,19 @@
 .card-content {
   flex-grow: 1;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .h2 {
+    font-size: 28px;
+  }
+
+  .typewriter-text {
+    font-size: 24px;
+  }
+
+  .footer {
+    padding-left: 1rem;
+    padding-bottom: 20px;
+  }
 }

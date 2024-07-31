@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const ResumeButton = () => {
   return (
-    <div className="flex justify-start items-center space-x-4">
+    <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
       {/* View Resume Button */}
       <Link
         href="/Thavindu Liyanage CV.pdf"

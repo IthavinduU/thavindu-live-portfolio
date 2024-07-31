@@ -65,14 +65,21 @@ const Home = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-4 xl:mb-6"
             >
               Relentlessly curious tech enthusiast, igniting innovation in the
-              ever-evolving digital landscape, one line of code at a time.{" "}
+              ever-evolving digital landscape, one line of code at a time.
             </motion.p>
             {/* Button */}
-            <div className="flex justify-center xl:hidden relative"></div>
-            <ResumeButton />
+            <motion.div
+              variants={fadeIn("down", 0.4)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="block xl:flex xl:justify-start xl:space-x-4"
+            >
+              <ResumeButton />
+            </motion.div>
           </div>
         </div>
         {/* Image Section */}

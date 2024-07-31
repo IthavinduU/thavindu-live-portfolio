@@ -2,9 +2,11 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <Link href="/BuyTemplate">
-      <p className="footer">© 2024 Thavindu Liyanage. All rights reserved.</p>
-    </Link>
+    <footer className="footer-container">
+      <Link href="/BuyTemplate">
+        <p className="footer">© 2024 Thavindu Liyanage. All rights reserved.</p>
+      </Link>
+    </footer>
   );
 };
 
