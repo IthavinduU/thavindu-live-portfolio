@@ -25,6 +25,14 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
       </Head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z4989FJHLF"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+
+        gtag('config', 'G-Z4989FJHLF');
+      </script>
       <div className="bg-primary/60 h-full flex flex-col min-h-screen">
         {/* Text Section */}
         <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
