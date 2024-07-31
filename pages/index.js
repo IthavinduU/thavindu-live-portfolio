@@ -24,14 +24,6 @@ const Home = () => {
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z4989FJHLF"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)};
-          gtag('js', new Date());
-
-          gtag('config', 'G-Z4989FJHLF');
-        </script>
       </Head>
 
       <div className="bg-primary/60 h-full flex flex-col min-h-screen">
