@@ -1,4 +1,3 @@
-// next image
 import Image from "next/image";
 
 const Bulb = () => {
@@ -9,7 +8,7 @@ const Bulb = () => {
         width={260}
         height={200}
         className="w-full h-full"
-        alt=""
+        alt="bulb img"
       />
     </div>
   );

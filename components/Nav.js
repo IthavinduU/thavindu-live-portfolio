@@ -4,7 +4,7 @@ import {
   HiViewColumns,
   HiRectangleGroup,
   HiBookOpen,
-  HiEnvelope
+  HiEnvelope,
 } from "react-icons/hi2";
 
 export const navData = [
@@ -13,7 +13,7 @@ export const navData = [
   { name: "services", path: "/services", icon: <HiRectangleGroup /> },
   { name: "projects", path: "/work", icon: <HiViewColumns /> },
   { name: "articles", path: "/articles", icon: <HiBookOpen /> },
-  { name: "contact", path: "/contact", icon: <HiEnvelope /> }
+  { name: "contact", path: "/contact", icon: <HiEnvelope /> },
 ];
 
 import Link from "next/link";
