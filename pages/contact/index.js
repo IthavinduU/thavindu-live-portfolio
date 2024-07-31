@@ -46,75 +46,77 @@ const Contact = () => {
         />
       </Head>
       <div className="h-full bg-primary/30">
-        <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
-          {/* text & form */}
-          <div className="flex flex-col w-full max-w-[700px]">
-            {/* text */}
+        <div className="container mx-auto py-12 sm:py-16 md:py-32 flex flex-col items-center justify-center h-full">
+          {/* text */}
+          <div className="text-center mb-8 sm:mb-12">
             <motion.h2
               variants={fadeIn("up", 0.2)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 text-center mb-12"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold"
             >
               Let me hear <span className="text-accent">what you got.</span>
             </motion.h2>
-            {/* form */}
+          </div>
+
+          {/* form */}
+          <div className="w-full max-w-[90%] sm:max-w-[700px]">
             <motion.form
               onSubmit={handleSubmit}
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="flex-1 flex flex-col gap-6 w-full mx-auto"
+              className="flex flex-col gap-4 sm:gap-6"
             >
               {/* input group */}
-              <div className="flex gap-x-6 w-full">
+              <div className="flex flex-col sm:flex-row gap-y-4 sm:gap-x-6 w-full">
                 <input
                   name="name"
                   type="text"
-                  placeholder="name"
-                  className="input"
+                  placeholder="Name"
+                  className="input text-sm sm:text-base p-2 sm:p-4"
                   required
                 />
                 <input
                   name="email"
                   type="email"
-                  placeholder="email"
-                  className="input"
+                  placeholder="Email"
+                  className="input text-sm sm:text-base p-2 sm:p-4"
                   required
                 />
               </div>
               <input
                 name="subject"
                 type="text"
-                placeholder="subject"
-                className="input"
+                placeholder="Subject"
+                className="input text-sm sm:text-base p-2 sm:p-4"
               />
               <textarea
                 name="message"
-                placeholder="message"
-                className="textarea"
+                placeholder="Message"
+                className="textarea text-sm sm:text-base p-2 sm:p-4"
                 required
               ></textarea>
               <button
                 type="submit"
-                className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+                className="btn rounded-full border border-white/50 max-w-[150px] sm:max-w-[170px] px-4 sm:px-8 py-2 sm:py-3 text-sm sm:text-base transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
               >
                 <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                   Send
                 </span>
-                <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
+                <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[20px] sm:text-[22px]" />
               </button>
-              <p>Hate Forms? No Worries</p>
+              <p className="text-sm sm:text-base">Hate Forms? No Worries</p>
               <a
                 href="mailto:thavindul@gmail.com"
-                className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+                className="btn rounded-full border border-white/50 max-w-[150px] sm:max-w-[170px] px-4 sm:px-8 py-2 sm:py-3 text-sm sm:text-base transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
               >
                 <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                   Email Me
                 </span>
-                <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
+                <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[20px] sm:text-[22px]" />
               </a>
             </motion.form>
           </div>
