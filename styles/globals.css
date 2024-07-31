@@ -21,11 +21,12 @@
 
 @layer base {
   body {
-    @apply overflow-hidden leading-relaxed;
+    @apply leading-relaxed;
+    overflow-x: hidden; /* Allow vertical scrolling */
   }
 
   .page {
-    @apply w-full h-screen overflow-hidden;
+    @apply w-full h-screen overflow-auto; /* Allow scrolling */
   }
 
   .h1 {
@@ -59,7 +60,7 @@
   }
 }
 
-/*Gradient css for the slogan animation*/
+/* Gradient css for the slogan animation */
 .gradient-text {
   background: linear-gradient(90deg, #050b64, hsl(199, 100%, 50%), #ffffff);
   background-size: 200% 200%;
@@ -99,6 +100,7 @@
   width: 100%;
   bottom: 0;
 }
+
 .footer-buytemp {
   text-align: left;
   padding-left: 16rem;

@@ -149,8 +149,9 @@ const About = () => {
         <title>About Me</title>
         <meta
           name="description"
-          content="Learn more about Thavindu Liyanage."
+          content="Learn more about Thavindu Liyanage, a final year computer science undergraduate with a passion for web development and backend engineering."
         />
+        <meta name="robots" content="index, follow" />
       </Head>
       <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
         <Circles />
@@ -185,7 +186,7 @@ const About = () => {
               className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
             >
               I&apos;m Thavindu Liyanage, a final year computer science
-              undergraduate with passion for web development and backend
+              undergraduate with a passion for web development and backend
               engineering.
             </motion.p>
             {/* counters */}
