@@ -29,11 +29,8 @@ function MyApp({ Component, pageProps }) {
           </motion.div>
         </AnimatePresence>
       </Layout>
-      <>
-        <Component {...pageProps} />
-        <SpeedInsights />
-      </>
       <Analytics />
+      <SpeedInsights />
     </>
   );
 }
