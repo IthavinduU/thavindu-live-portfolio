@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:title" content="Thavindu Liyanage" />
         <link rel="icon" type="image/png" href="/avatar.png" />
       </Head>
+      
       <Layout>
         <AnimatePresence mode="wait">
           <motion.div key={router.route} className="h-full">
