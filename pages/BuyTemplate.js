@@ -3,8 +3,8 @@ import Footer from "../components/Footer";
 const BuyTemplate = () => {
   return (
     <div className="h-screen flex flex-col bg-primary/60">
-      <div className="flex-grow flex items-center justify-center">
-        <p className="buy-template">
+      <div className="flex-grow flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12">
+        <p className="text-center text-base sm:text-lg md:text-xl lg:text-2xl max-w-[90%] mx-auto">
           Hey! If you would like to purchase my portfolio template, please reach
           out to me on{" "}
           <a
@@ -18,7 +18,7 @@ const BuyTemplate = () => {
         </p>
       </div>
       {/* Footer */}
-      <div className="w-full">
+      <div className="w-full mt-auto">
         <Footer />
       </div>
     </div>
