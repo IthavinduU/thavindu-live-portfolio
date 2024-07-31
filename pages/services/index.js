@@ -1,10 +1,10 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 import ServiceSlider from "../../components/ServiceSlider";
 import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
 import Head from "next/head";
 import Footer from "../../components/Footer";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
 
 const Services = () => {
   return (
@@ -27,7 +27,7 @@ const Services = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="h2 xl:mt-8"
+                className="text-2xl md:text-4xl xl:text-5xl font-semibold xl:mt-8"
               >
                 My services <span className="text-accent">.</span>
               </motion.h2>
@@ -36,14 +36,12 @@ const Services = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+                className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-sm md:text-base"
               >
                 I offer specialized services designed to exceed your
-                expectations. Imagine precision-driven results crafted just for
-                you.Enjoy affordable, transparent pricing and reliable timelines
-                that ensure your project is delivered promptly, along with
-                ongoing support and expert guidance for seamless integration and
-                deployment.
+                expectations. Precision-driven results crafted with affordable,
+                transparent pricing and reliable timelines that ensure your
+                project is delivered promptly, along with ongoing support
               </motion.p>
             </div>
 
