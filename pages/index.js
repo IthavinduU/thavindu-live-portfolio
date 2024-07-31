@@ -68,7 +68,7 @@ const Home = () => {
               className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-4 xl:mb-6"
             >
               Relentlessly curious tech enthusiast, igniting innovation in the
-              ever-evolving digital landscape, one line of code at a time.
+              ever-evolving digital landscape, one line of code at a time. test
             </motion.p>
             {/* Button */}
             <motion.div
