@@ -152,6 +152,7 @@ const About = () => {
           content="Learn more about Thavindu Liyanage, a final year computer science undergraduate with a passion for web development and backend engineering."
         />
         <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
         <Circles />
