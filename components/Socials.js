@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 import {
   RiLinkedinBoxFill,
   RiGithubFill,
@@ -18,6 +17,7 @@ const Socials = () => {
           href={"mailto:thavindul@gmail.com"}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Email"
           className="hover:text-accent transition-all duration-300 flex items-center"
         >
           <RiMailSendFill />
@@ -32,6 +32,7 @@ const Socials = () => {
           href={"https://www.linkedin.com/in/thavinduliyanage/"}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn"
           className="hover:text-accent transition-all duration-300 flex items-center"
         >
           <RiLinkedinBoxFill />
@@ -46,6 +47,7 @@ const Socials = () => {
           href={"https://github.com/IthavinduU"}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub"
           className="hover:text-accent transition-all duration-300 flex items-center"
         >
           <RiGithubFill />
@@ -60,6 +62,7 @@ const Socials = () => {
           href={"https://medium.com/@thavinduwrites"}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Medium"
           className="hover:text-accent transition-all duration-300 flex items-center"
         >
           <RiMediumFill />
@@ -74,6 +77,7 @@ const Socials = () => {
           href={"https://wa.me/+94779691729"}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="WhatsApp"
           className="hover:text-accent transition-all duration-300 flex items-center"
         >
           <RiWhatsappFill />
@@ -82,9 +86,11 @@ const Socials = () => {
           WhatsApp
         </span>
       </div>
+
       <div className="relative group">
         <Link
           href={"/BuyTemplate"}
+          aria-label="Buy me a coffee"
           className="hover:text-accent transition-all duration-300 flex items-center"
         >
           <RiCupFill />

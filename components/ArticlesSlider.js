@@ -42,7 +42,7 @@ const Articleslider = () => {
   }, []);
 
   return (
-    <div className=" px-16 py-1 px-4">
+    <div className="px-4 md:px-8 lg:px-16 py-4">
       <Swiper
         navigation={true}
         pagination={{
@@ -55,32 +55,32 @@ const Articleslider = () => {
         speed={3000}
         loop={true}
         modules={[Navigation, Pagination, Autoplay]}
-        className="h-[400px]"
+        className="h-[300px] md:h-[400px]"
       >
         {articles.map((article, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16 py-4">
+            <div className="flex flex-col items-center md:flex-row gap-4 md:gap-x-8 h-full px-4 md:px-8 lg:px-16 py-4">
               {/* image and title */}
-              <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0  ">
-                <div className="flex flex-col justify-center text-center ">
+              <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto md:mx-0">
+                <div className="flex flex-col justify-center text-center">
                   {/* image */}
                   <div className="mb-2 mx-auto"></div>
                   {/* title */}
-                  <div className="text-lg">{article.title}</div>
+                  <div className="text-base md:text-lg">{article.title}</div>
                   {/* pubDate */}
-                  <div className="text-[12px] uppercase font-extralight tracking-widest">
+                  <div className="text-[10px] md:text-[12px] uppercase font-extralight tracking-widest">
                     {new Date(article.pubDate).toDateString()}
                   </div>
                 </div>
               </div>
               {/* description and link */}
-              <div className="flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
+              <div className="flex-1 flex flex-col justify-center relative md:pl-8">
                 {/* quote icon */}
                 <div className="mb-4">
-                  <FaQuoteLeft className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0" />
+                  <FaQuoteLeft className="text-2xl md:text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0" />
                 </div>
                 {/* description */}
-                <div className="xl:text-lg text-center md:text-left mb-4">
+                <div className="text-sm md:text-base xl:text-lg text-center md:text-left mb-4">
                   {parse(cleanHTML(getAbstract(article.description)))}
                 </div>
                 {/* link to full article */}

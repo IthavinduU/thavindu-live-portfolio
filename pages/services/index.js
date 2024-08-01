@@ -36,7 +36,7 @@ const Services = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-sm md:text-base"
+                className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-sm md:text-base p"
               >
                 I offer specialized services designed to exceed your
                 expectations. Precision-driven results crafted with affordable,

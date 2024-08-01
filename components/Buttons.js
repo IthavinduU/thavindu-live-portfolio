@@ -11,7 +11,7 @@ const ResumeButton = () => {
         rel="noopener noreferrer"
       >
         <motion.button
-          className="bg-accent text-white px-6 py-3 rounded-lg shadow-lg font-semibold cursor-pointer"
+          className="bg-accent text-white px-6 py-3 rounded-lg shadow-lg font-semibold cursor-pointer transition-transform duration-300 ease-in-out"
           whileHover={{
             scale: 1.05,
             boxShadow: "0 10px 20px rgba(0,0,0,0.2)",
@@ -26,7 +26,7 @@ const ResumeButton = () => {
       {/* Contact Me Button */}
       <Link href="/contact">
         <motion.button
-          className="bg-accent text-white px-6 py-3 rounded-lg shadow-lg font-semibold cursor-pointer"
+          className="bg-accent text-white px-6 py-3 rounded-lg shadow-lg font-semibold cursor-pointer transition-transform duration-300 ease-in-out"
           whileHover={{
             scale: 1.05,
             boxShadow: "0 10px 20px rgba(0,0,0,0.2)",
