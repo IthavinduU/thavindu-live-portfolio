@@ -19,7 +19,7 @@ const Home = () => {
         <title>Thavindu Liyanage</title>
         <meta
           name="description"
-          content="ThavinduU - Full Stack Developer, Cloud Enthusiast, and Savvy Tech Nerd. Explore my projects and professional journey."
+          content="Thavindu Liyanage - Full Stack Developer, Cloud Enthusiast, and Savvy Tech Nerd. Explore my projects and professional journey."
         />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
