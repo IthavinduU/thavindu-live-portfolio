@@ -16,6 +16,8 @@ const Services = () => {
           content="Services Provided by Thavindu Liyanage."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8190718595499930"
+          crossorigin="anonymous"></script>
       </Head>
       <div className="h-full bg-primary/30 py-36 flex items-center">
         <Circles />

@@ -15,6 +15,8 @@ const Articles = () => {
           content="Read the latest articles and expand your knowledge on various topics. Knowledge is power!"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8190718595499930"
+     crossorigin="anonymous"></script>
       </Head>
       <div className="h-full bg-primary/30 py-32 text-center flex items-center">
         <div className="container mx-auto h-full flex flex-col justify-center">

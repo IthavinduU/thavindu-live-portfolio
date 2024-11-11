@@ -44,6 +44,8 @@ const Contact = () => {
           name="description"
           content="Get in touch with Thavindu Liyanage. Send a message or inquiry through the contact form."
         />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8190718595499930"
+          crossorigin="anonymous"></script>
       </Head>
       <div className="h-full bg-primary/30">
         <div className="container mx-auto py-12 sm:py-16 md:py-32 flex flex-col items-center justify-center h-full">

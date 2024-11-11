@@ -20,8 +20,10 @@ function MyApp({ Component, pageProps }) {
         />
         <meta property="og:title" content="Thavindu Liyanage" />
         <link rel="icon" type="image/png" href="/avatar.png" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8190718595499930"
+          crossorigin="anonymous"></script>
       </Head>
-      
+
       <Layout>
         <AnimatePresence mode="wait">
           <motion.div key={router.route} className="h-full">
